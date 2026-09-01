@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fondo de la página */
+body {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+        url("./imagenes/fondo.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 450px;
+
+    background: rgba(255, 255, 255, 0.50);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    /* Sombra elegante */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+
+    /* Animación al cargar */
+    animation: aparecer 0.8s ease-out;
+
+    /* Ligero efecto de transparencia */
+    backdrop-filter: blur(4px);
+}
+
+
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+
+    color: #795c57;
+
+    font-size: 34px;
+
+    /* Letra cursiva elegante */
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+
+    font-weight: normal;
+
+    animation: aparecerTitulo 1s ease-out;
+}
+
+
+/* Icono de los novios */
+.novios {
+    display: inline-block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 28px;
+
+    margin-left: 8px;
+
+    /* Animación suave */
+    animation: noviosAparecer 1.2s ease-out;
+}
+
+
+/* Pequeño movimiento de los novios */
+@keyframes noviosAparecer {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+    }
+
+    70% {
+        transform: scale(1.15) rotate(3deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+}
+
+/* Texto */
+p {
+    margin-bottom: 25px;
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* Campo de texto */
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #795c57;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto al seleccionar el campo */
+input:focus {
+    border-color: #67a38f;
+
+    box-shadow: 0 0 8px rgba(103, 163, 143, 0.35);
+
+    transform: scale(1.01);
+}
+
+
+/* Botón elegante */
+button {
+    width: 70%;
+    max-width: 250px;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    /* Degradado verde */
+    background: linear-gradient(135deg, #67a38f, #4f8975);
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    display: block;
+    margin: 0 auto;
+
+    /* Sombra */
+    box-shadow: 0 6px 15px rgba(79, 137, 117, 0.30);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Cuando pasas el mouse */
+button:hover {
+    background: linear-gradient(135deg, #578d7b, #3f7563);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(79, 137, 117, 0.40);
+}
+
+
+/* Cuando haces clic */
+button:active {
+    transform: scale(0.96);
+
+    box-shadow: 0 4px 8px rgba(79, 137, 117, 0.25);
+}
+
+
+
+/* Resultado */
+#resultado {
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #795c57;
+
+    line-height: 1.5;
+
+    animation: aparecerResultado 0.5s ease-out;
+}
+
+
+/* Animación de entrada de la tarjeta */
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animación del título */
+@keyframes aparecerTitulo {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Animación del resultado */
+@keyframes aparecerResultado {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 📱 Adaptación para celulares */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 30px 22px;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    input,
+    button {
+        font-size: 16px;
+    }
+}
