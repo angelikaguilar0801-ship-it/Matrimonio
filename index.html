@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,15 +14,13 @@
 
     <div class="container">
 
-    <h1> Lista de Invitados <span class="novios">👰🏻‍♀️🤵🏻‍♂️</span> </h1>
+        <h1> Lista de Invitados <span class="novios">👰🏻‍♀️🤵🏻‍♂️</span> </h1>
 
-        <p>Ingresa tu primer nombre y apellido para consultar tu cantidad de invitados.</p>
+        <p>Selecciona tu nombre para consultar tu cantidad de invitados.</p>
 
-        <input
-            type="text"
-            id="nombre"
-            placeholder="Escribe tu nombre"
-        >
+        <select id="nombre">
+            <option value="">Selecciona tu nombre</option>
+        </select>
 
         <button onclick="consultarInvitados()">
             Consultar
@@ -34,6 +33,6 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>
+
 
