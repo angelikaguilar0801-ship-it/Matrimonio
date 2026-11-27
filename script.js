@@ -39,7 +39,7 @@ const invitados = {
 
     "jhon gonzalez": "🥂 Hola Jhon González, te esperamos a ti y a tu esposa con mucho cariño en nuestra boda. 💕✨ Total asistentes: 2 👩‍❤️‍👨",
 
-    "cristina aguilar": "🌹 Hola Cristina Aguilar, te esperamos a ti y a tu esposo para compartir juntos este día tan especial. 💍💕 Total asistentes: 2 👩‍❤️‍👨",
+    "Felipe": "🌹 Hola Felipe, te esperamos a ti y a Lesly para compartir juntos este día tan especial. 💍💕 Total asistentes: 2 👩‍❤️‍👨",
 
     "wilson gelves": "💖 Hola Wilson Gelves, te esperamos a ti, tu esposa e hijos para celebrar juntos nuestro gran día. 💍💕 Total asistentes: 4 👨‍👩‍👧‍👦",
 
